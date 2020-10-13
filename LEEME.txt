@@ -1,0 +1,28 @@
+Contenido del repo:
+- Carpeta APIGEO: Solución del servicio APIGEO.
+- Carpeta Geolocalizador: Solución del servicio Geolocalizador.
+- Carpeta DB: Contiene un .bak de la base de datos por si es necesario. La misma se puede implementar usando las migraciones en APIGEO.
+- Archivo APIGeo.postman_collection.json: Export del programa Postman que permite testear APIGEO y Geolocalizador: APIGeo.postman_collection.json.
+
+********************
+Sobre APIGEO:
+
+El archivo PuntosController.cs tiene 2 variables que deberían estar en el archivo appsettings, las mismas son:
+- colaPregunta -> es el nombre de la cola utilizada para solicitar la geolocalización de la dirección.
+- hostrabbitmq -> es el hostname del servidor de RabbitMQ.
+
+El archivo Programs.cs tiene 3 variables que deberían estar en el archivo appsettings, las mismas son:
+- colaRespuesta -> es el nombre de la cola utilizada para devolver las coordenadas.
+- hostrabbitmq -> es el hostname del servidor de RabbitMQ.
+- urlSitio -> es la URL del sitio publicado, actualmente esta la URL que sale al ejecutar con IIS Express, 
+antes de probar hay que asegurarse de que este bien esa ULR.
+
+*******************
+
+Sobre Geolocalizador:
+El archivo Programs.cs tiene 3 variables que deberían estar en el archivo appsettings, las mismas son:
+- colaPregunta -> es el nombre de la cola utilizada para solicitar la geolocalización de la dirección.
+- colaRespuesta -> es el nombre de la cola utilizada para devolver las coordenadas.
+- hostrabbitmq -> es el hostname del servidor de RabbitMQ.
+
+

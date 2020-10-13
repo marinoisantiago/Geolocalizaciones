@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "02fcf973-6f71-444e-9161-f1572f054ed7",
+		"name": "APIGeo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EnviarDireccion",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Calle\": \"Av Juan B. Justo\",\r\n    \"Numero\": \"4475\",\r\n    \"Ciudad\": \"CABA\",\r\n    \"Codigo_postal\": \"1416\",\r\n    \"Provincia\": \"Buenos Aires\",\r\n    \"Pais\": \"Argentina\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44332/Puntos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44332",
+					"path": [
+						"Puntos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerPunto",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44332/Puntos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44332",
+					"path": [
+						"Puntos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Geolocalizar",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Latitud\": 1,\r\n    \"Longitud\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44332/Puntos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44332",
+					"path": [
+						"Puntos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

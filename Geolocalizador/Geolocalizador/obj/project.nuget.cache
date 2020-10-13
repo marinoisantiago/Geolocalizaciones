@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "BfNQ0+jkq6GD4asFzbdwGJyJzAOA9Z7mhWC2/ku++6RSukFs3jLHkPBaCBJ05dnJRlvDBR13YejMK9zJfVACHg==",
+  "success": true,
+  "projectFilePath": "D:\\EjercicioAndreani\\Entrega\\Geolocalizador\\Geolocalizador\\Geolocalizador.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Santiago\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\ServiciosAndreani</_PublishTargetUrl>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConexionGeo">
+      <Value>Server=MAGI-SYSTEM\MAGISERVER%3bDatabase=Geolocalizaciones,User ID=UserTest%3bPassword=UserTest%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="APIGEO.Datos.APIGEOContext">
+      <Value>Server=MAGI-SYSTEM\MAGISERVER%3bDatabase=Geolocalizaciones,User ID=UserTest%3bPassword=UserTest%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
